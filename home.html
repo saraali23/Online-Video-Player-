@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="vid"  src="video/frozen.mp4" width="350" height="200" poster="image/frozen.jpg"></video>
+    <div>
+        <!-- <progress id="vidProg" value="0" style="width:350px;"></progress> -->
+        <input  type="range" min="1" max="100" value="0" id="vidProg" style="width:350px;">
+        <span id="vidspan"></span>
+    </div>
+    <div>
+        <input id="startbtn" type="button" value="Play"/>
+        <input id="pausebtn" type="button" value="Stop"/>
+        <input id="2backbtn" type="button" value="<<"/>
+        <input id="backbtn" type="button" value="<"/>
+        <input id="forwardbtn" type="button" value=">"/>
+        <input id="2forwardbtn" type="button" value=">>"/>
+        <!-- <progress id="volProg" value="0"></progress> -->
+        <input type="range" min="0" max="100" value="50" id="volProg">
+        <input id="mutebtn" type="button" value="Mute"/>
+    </div>
+    <div>
+        <label>Speed </label>
+        <input type="range" min="0" max="16" value="0" id="speedProg">
+    </div>
+
+
+    <script src="videoFun.js"></script>
+</body>
+</html>
